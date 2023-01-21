@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Instructions" />
+
+        <TextView
+            android:id="@+id/textView4"
+            android:layout_width="wrap_content"
+            android:layout_height="129dp"
+            android:text="This is a simple mathematic games which is believe can train your mind. Two numbers are given randomly based on your level choice with a nathermatic operator. You just calculates the answer, write your answer and press check button. Every correct answer will give you 1 point and any wrong answer will deduct 1 point." />
+
+        <TextView
+            android:id="@+id/textView5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Choose Level" />
+
+        <RadioGroup
+            android:id="@+id/radioGroup"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <RadioButton
+                android:id="@+id/radioButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="left"
+                android:text="Easy" />
+
+            <RadioButton
+                android:id="@+id/radioButton2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:text="Medium" />
+
+            <RadioButton
+                android:id="@+id/radioButton3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="right"
+                android:text="Hard" />
+        </RadioGroup>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="80dp">
+
+            <TextView
+                android:id="@+id/textView"
+                android:layout_width="140dp"
+                android:layout_height="83dp"
+                android:text="1"
+                android:textAlignment="center"
+                android:textSize="40dp" />
+
+            <TextView
+                android:id="@+id/textView2"
+                android:layout_width="120dp"
+                android:layout_height="83dp"
+                android:text="+"
+                android:textAlignment="center"
+                android:textSize="40dp" />
+
+            <TextView
+                android:id="@+id/textView3"
+                android:layout_width="120dp"
+                android:layout_height="83dp"
+                android:text="2"
+                android:textAlignment="center"
+                android:textSize="40dp" />
+
+        </LinearLayout>
+
+        <EditText
+            android:id="@+id/editTextTextPersonName"
+            android:layout_width="350dp"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:inputType="textPersonName"
+            android:text="Your Answer"
+            android:layout_marginTop="50dp"
+            android:layout_gravity="center"
+            android:textAlignment="center"
+            android:hint="Your answer"/>
+
+        <Button
+            android:id="@+id/button"
+            android:layout_width="350dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="Check" />
+
+        <TextView
+            android:id="@+id/textView6"
+            android:layout_width="350dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="50dp"
+            android:text="POINT : 0"
+            android:textAlignment="center"
+            android:textColor="#EAAA00"
+            android:textSize="50dp" />
+
+</LinearLayout>
